@@ -9,13 +9,77 @@
  Rosa: #E75A7C
  Grön: #BBC7A4
  Vit: #F2F5EA
-
- Rubriker:
- h1 Roboto 42px bold rosa
- h2 robot 36px bold rosa
- h3 robot 32px bold svart
- h4 robot 26px bold svart
- h5 robot 23px bold svart
- h6 robot 20px bold svart
- bröd: roboto 18px svart
  */
+
+/*Importing font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*General settings etc*/
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: #2C363F;
+}
+
+/*Headers, Fonts etc*/
+h1, h2 {
+    font-weight: bold;
+    color: #E75A7C;
+}
+
+h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+}
+
+/*Size of headers*/
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 26px;
+}
+
+h5 {
+    font-size: 23px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+/*Header, footer, nav*/
+header, footer, nav {
+    background-color: #BBC7A4;
+}
+
+/*Styling of navbar*/
+nav ul {
+    position: sticky;    
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 2%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #2C363F;
+}
