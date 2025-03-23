@@ -18,28 +18,36 @@
     </header>
     <nav>
         <img src="images/logo.svg" alt="logotyp">
-        <ul>
-            <li><a href="index.html">Startsida</a></li>
-            <li><a href="about.html">Om mig</a></li>
-            <li><a href="editing.html">Bildbehandling</a></li>
-        </ul>
+        <button id="openmenu" class="menubutton"><span class="fa fa-bars"></span>Meny</button>
+        <div id="menu">
+            <button id="closemenu" class="menubutton"><span class="fa fa-times"></span>Stäng meny</button>
+            <ul id="navlist">
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="about.html">Om mig</a></li>
+                <li><a href="editing.html">Bildbehandling</a></li>
+            </ul>
+        </div>
     </nav>
-    <main>
-        <h1>Om mig</h1>
-        <picture>
-            
-        </picture>
-        <article>
+    <main id="mainabout">
+        <h1 id="h1about">Om mig</h1>
+        <img id="imgabout" class="round" src="images/portrait.png" alt="Linn har hörlurar på sig och ser trött ut">
+        <article id="articleabout1" class="about">
             <h2>Linn Eriksson</h2>
-            <p></p>
+            <p>Jag heter Linn Eriksson. Jag är 36 år gammal och pluggar på Webbutvecklingsprogrammet. Jag har inte listat ut hur man skriver vettiga presentationer än. I övrigt gillar jag geocaching och katter.</p>
+            <p>Jag har gjort några mindre bildbehandlingsuppgifter på komvux för några år sedan och är inte rädd för att öppna ett fotoredigeringsprogram när behov uppstår, men har inte arbetat med bildbehandling i någon större utsträckning tidigare. Jag tycker personligen att bildbehandling är ganska tråkigt att syssla med.</p>
         </article>
-        <article>
+        <article id="articleabout2" class="about">
             <h2>Om uppgiften</h2>
+            <p>Uppgiften har tagit en del tid i anspråk och främst har tiden gått åt till delmoment som i mitt tycke inte känns som huvudfokus för kursen. Till exempel tog det en del extra tid i anspråk att få menyn att fungera som den skulle på olika skärmstorlekar eftersom designskisserna använde en utfällbar sidebar. Jag valde till slut att strunta i att göra den overlay som designskissen använder när sidebaren fälls ut, helt enkelt eftersom jag inte får det att fungera med JavaScript och jag saknar kunskapen för att lösa problemet.</p>
+            <p>Jag upplever själva bildredigeringsuppgifterna som väldigt ojämna i tidsåtgång där några tar flera timmar i anspråk och några betydligt kortare tid. Detta får mig som student att bli osäker på om jag har missförstått uppgiften. Att jag släppte den här kursen första gången var mycket för att deluppgifterna i den här kursen kändes otydliga och gigantiska, i efterhand var kanske otydligheten ett större problem än storleken på respektive bildbehandlingsdel.</p>
+            <p>Jag har haft väldigt svårt att uppskatta den här uppgiften eftersom innehållet och upplägget inte har känts engagerande för mig. Detta beror delvis på att jag har svårt att hitta motivation för ett ämne som jag finner ointressant, men jag tänker mig att ett annat angreppssätt hade kunnat engagera mig mer.</p>
+            <p>Vad jag har lärt mig av uppgiften är väl främst att handkolorera svartvita fotografier, att det är relativt lätt att bygga menyer i form av sidebars, att det finns flera olika färger som kallas "Falu rödfärg" och mer än jag vill kunna om hästars anatomi.</p>
         </article>
     </main>
     <footer>
         <p>Laborationsuppgift för kursen DT200G, Grafisk teknik för webb.</br>
             &#169; Copyright Linn Eriksson, 2025</p>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

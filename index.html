@@ -11,25 +11,56 @@
     <header>
         <picture>
             <source media="(min-width: 1521px)" srcset="images/stor_bild.jpg">
-            <source media="(min-width: 801px)" srcset="images/mellan_bild.jpg">
+            <source media="(min-width: 801px) and (max-width: 1520px)" srcset="images/mellan_bild.jpg">
             <source media="(max-width: 800px)" srcset="images/liten_bild.jpg">
             <img src="images/liten_bild.jpg" alt="Bakgrundsbild">
         </picture>
     </header>
     <nav>
         <img src="images/logo.svg" alt="logotyp">
-        <ul>
-            <li><a href="index.html">Startsida</a></li>
-            <li><a href="about.html">Om mig</a></li>
-            <li><a href="editing.html">Bildbehandling</a></li>
-        </ul>
+        
+        <button id="openmenu" class="menubutton"><span class="fa fa-bars"></span>Meny</button>
+        <div id="menu">
+            <button id="closemenu" class="menubutton"><span class="fa fa-times"></span>Stäng meny</button>
+            <ul id="navlist">
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="about.html">Om mig</a></li>
+                <li><a href="editing.html">Bildbehandling</a></li>
+            </ul>
+        </div>
     </nav>
     <main>
-        <h1>Senaste produkterna</h1>
+        <article class="textcenter">
+            <h1>Senaste produkterna</h1>
+            <section class="sectionthirds">
+                <img src="images/frilaggning01.png" alt="En påse kattmat">
+            </section>
+            <section class="sectionthirds">
+                <img src="images/frilaggning02.png" alt="Ett paket svampbuljong">
+            </section>
+            <section class="sectionthirds">
+                <img src="images/frilaggning03.png" alt="En burk gurkmeja">
+            </section>
+        </article>
+
+    
+        <div class="image_container">
+            <img class="opacity" src="images/background.jpg" alt="Hus i vinterlandskap">
+            <div class="text_centerimage">
+                <p class="white_text text_shadow">Webbutvecklingsprogrammet</p>
+                <p class="white_text text_shadow">Mittuniversitetet</p>
+                <button class="white_text button">Sök här</button>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="images/reklam_banner.gif" alt="Extrapris på kattmat, gurkmeja och svampbuljong.">
+        </div>
     </main>
     <footer>
         <p>Laborationsuppgift för kursen DT200G, Grafisk teknik för webb.</br>
             &#169; Copyright Linn Eriksson, 2025</p>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

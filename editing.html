@@ -18,24 +18,53 @@
     </header>
     <nav>
         <img src="images/logo.svg" alt="logotyp">
-        <ul>
-            <li><a href="index.html">Startsida</a></li>
-            <li><a href="about.html">Om mig</a></li>
-            <li><a href="editing.html">Bildbehandling</a></li>
-        </ul>
+        <button id="openmenu" class="menubutton"><span class="fa fa-bars"></span>Meny</button>
+        <div id="menu">
+            <button id="closemenu" class="menubutton"><span class="fa fa-times"></span>Stäng meny</button>
+            <ul id="navlist">
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="about.html">Om mig</a></li>
+                <li><a href="editing.html">Bildbehandling</a></li>
+            </ul>
+        </div>
     </nav>
     <main>
         <h1>Bildbehandling</h1>
-        <article>
+        <article class="textcenter">
             <h2>Färgstick</h2>
+            <section>
+                <picture>
+                    <source srcset="images/fargstick_fore.webp">
+                    <img src="images/fargstick_fore.jpg" alt="Gultonad bild på tre hus i ett snölandskap">
+                </picture>
+            </section>
+            <section>
+                <picture>
+                    <source srcset="images/fargstick.webp">
+                    <img src="images/fargstick.jpg" alt="Lite neutralarae/blåare bild på tre hus i ett snölandskap">
+                </picture>
+            </section>
         </article>
-        <article>
+        <article class="textcenter">
             <h2>Handkolorering och retusch</h2>
+            <section>
+                <picture>
+                    <source srcset="images/handkolorering_fore.webp">
+                    <img src="images/handkolorering_fore.jpg" alt="Svartvitt foto på barn som sitter i en släde bakom en häst.">
+                </picture>
+            </section>
+            <section>
+                <picture>
+                    <source srcset="images/handkolorering.webp">
+                    <img src="images/handkolorering.jpg" alt="Färglagt foto av barn som sitter i en släde bakom en häst.">
+                </picture>
+            </section>
         </article>
     </main>
     <footer>
         <p>Laborationsuppgift för kursen DT200G, Grafisk teknik för webb.</br>
             &#169; Copyright Linn Eriksson, 2025</p>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
